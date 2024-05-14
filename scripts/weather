@@ -1,0 +1,3 @@
+curl -sf "wttr.in/<location>?format=2" > "$HOME/.local/share/weatherreport" || exit 1 ;
+rain=$(cat ~/.local/share/weatherreport)
+echo $rain
